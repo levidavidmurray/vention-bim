@@ -12,12 +12,13 @@ cd ./vention-bim
 
 # install dependencies
 bundle && yarn install
+gem install foreman
 
 # seed database
 bundle exec rake db:setup db:migrate db:seed
 
 # start server
-bundle exec rails s
+foreman start -f Procfile.dev
 ```
 
 ### Production Build
