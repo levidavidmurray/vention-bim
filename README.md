@@ -2,7 +2,7 @@
 
 Book Inventory Management system for Vention take home project. Developed using Ruby on Rails 7, Hotwire, Vite, and WindiCSS.
 
-Demo: <a href="https://vention.levimurray.dev">https://vention.levimurray.dev</a>
+Demo: <a href="https://vention.levimurray.dev" target="_blank">https://vention.levimurray.dev</a>
 
 ### Development Setup
 ```bash
