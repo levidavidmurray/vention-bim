@@ -19,7 +19,11 @@
       </a>
     </div>
     <div class="w-full bg-neutral-200 border-neutral-300 border py-4 px-6">
-      <turbo-frame src="/stores/1" id="store_display"></turbo-frame>
+      <% if @default_store.nil? %>
+        <turbo-frame src="/stores/new" id="store_display"></turbo-frame>
+      <% else %>
+        <turbo-frame src="/stores/<%= @default_store.id %>" id="store_display"></turbo-frame>
+      <% end %>
     </div>
   </div>
 
