@@ -1,0 +1,25 @@
+<div class="mt-2"></div>
+<%= form_for @book do |f| %>
+  <div class="space-y-2">
+    <div class="flex space-x-2">
+      <div class="max-w-sm flex-grow">
+        <%= f.label :title %>
+        <%= f.text_field :title, placeholder: "Book title" %>
+      </div>
+      <div class="w-32">
+        <%= f.label :year %>
+        <%= f.number_field :year, placeholder: "Year published" %>
+      </div>
+    </div>
+
+    <div>
+      <%= f.label :author %>
+      <div class="flex items-center">
+        <%= render partial: "authors/author_select", locals: { author: @book.author } %>
+      </div>
+    </div>
+
+    <button primary class="mt-4 px-2" type="submit">Save</button>
+
+  </div>
+<% end %>

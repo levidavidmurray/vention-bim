@@ -1,0 +1,23 @@
+<turbo-frame id="store_display">
+  <%# Bookstore Name %>
+  <div class="mb-4 flex items-center justify-between">
+    <h3><%= store.name %></h3>
+
+    <div class="flex space-x-2">
+      <a href="/stores/<%= store.id %>/edit" data-turbo-frame="store_display">
+        <button class="flex items-center">Edit Store</button>
+      </a>
+      <a href="/store_books/add_books?store_id=<%= store.id %>" data-turbo-frame="store_display">
+        <button primary class="flex items-center">Add Book</button>
+      </a>
+    </div>
+  </div>
+
+  <div class="mb-2 flex items-center bg-indigo-800 pl-2 py-1">
+    <h4 class="font-bold text-neutral-100">Books</h4>
+  </div>
+
+  <div class="space-y-2">
+    <%= render 'store_books/store_books_list', store_books: store.store_books.ordered_by_out_of_stock %>
+  </div>
+</turbo-frame>

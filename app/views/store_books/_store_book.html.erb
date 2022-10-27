@@ -1,0 +1,33 @@
+<div class="border-b border-neutral-300 pb-2 mb-2">
+  <turbo-frame id="store_book_<%= store_book.id %>">
+
+    <%= render "shared/book_list_item_info", book: store_book.book %>
+
+    <div class="relative">
+
+      <div class="flex items-center justify-between">
+
+        <div class="mt-2">
+          <div class="inline-block" style="min-width: 74px;">
+            <span chip class="<%= store_book.in_stock? ? 'bg-indigo-800' : 'bg-neutral-400' %>">In-stock: <%= store_book.count %></span>
+          </div>
+
+          <div class="inline-flex">
+            <form action="/store_books/<%= store_book.id %>/remove_stock" data-turbo-frame="_self" method="post">
+              <button icon class="border-r-0 justify-center button-square"><iconify-icon icon="ic:baseline-minus"></iconify-icon></button>
+            </form>
+            <form action="/store_books/<%= store_book.id %>/add_stock" data-turbo-frame="_self" method="post">
+              <button icon class="justify-center button-square"><iconify-icon icon="ic:baseline-plus"></iconify-icon></button>
+            </form>
+          </div>
+        </div>
+
+        <form action="/store_books/<%= store_book.id %>" data-turbo-frame="store_books_list" method="delete">
+          <button>Remove Book</button>
+        </form>
+
+      </div>
+
+    </div>
+  </turbo-frame>
+</div>

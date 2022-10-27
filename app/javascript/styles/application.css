@@ -1,0 +1,56 @@
+:root {
+  --button-height: 24px;
+}
+
+h3 {
+  @apply text-2xl font-semibold;
+}
+
+h3[header] {
+  @apply bg-indigo-800 text-white px-2 py-1 mb-2;
+}
+
+button {
+  @apply bg-neutral-100 border border-neutral-300 py-0.5 px-2 text-xs flex items-center;
+  @apply hover:bg-neutral-300;
+  @apply active:bg-neutral-400;
+  min-height: var(--button-height);
+}
+
+button[primary] {
+  @apply bg-indigo-800 text-white border-indigo-900 transition-transform transform font-medium;
+  @apply active:scale-95;
+}
+
+button[icon] {
+  @apply flex items-center;
+}
+
+span[chip] {
+  @apply text-xs font-medium p-0.5 px-1 text-white flex justify-center items-center leading-3;
+  min-width: 72px;
+  min-height: var(--button-height);
+}
+
+label {
+  @apply mr-1 text-xs font-medium;
+}
+
+input {
+  @apply px-2 bg-neutral-100 border border-neutral-300 w-full text-base;
+  min-height: var(--button-height);
+}
+
+select {
+  @apply px-2 bg-neutral-100 border border-neutral-300 text-base;
+  min-height: var(--button-height);
+}
+
+iconify-icon {
+  @apply pointer-events-none;
+}
+
+.button-square {
+  width: var(--button-height);
+  height: var(--button-height);
+}

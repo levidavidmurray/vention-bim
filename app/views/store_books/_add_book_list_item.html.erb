@@ -1,0 +1,23 @@
+<div class="border-b border-neutral-300 pb-2 mb-2">
+  <turbo-frame id="book_<%= book.id %>">
+
+    <div class="flex">
+      <%= render "shared/book_list_item_info", book: book %>
+
+      <div class="flex flex-grow items-end justify-end">
+        <% if local_assigns[:store_book] %>
+          <form action="/store_books/<%= store_book.id %>?added" data-turbo-frame="_self" method="delete" class="inline-block mr-0 ml-auto">
+            <button>Remove Book</button>
+          </form>
+        <% elsif local_assigns[:store] %>
+          <form action="/store_books" data-turbo-frame="_self" method="post" class="inline-block mr-0 ml-auto">
+            <input type="hidden" name="store_id" value="<%= store.id %>">
+            <input type="hidden" name="book_id" value="<%= book.id %>">
+            <button>Add Book</button>
+          </form>
+        <% end %>
+      </div>
+    </div>
+
+  </turbo-frame>
+</div>

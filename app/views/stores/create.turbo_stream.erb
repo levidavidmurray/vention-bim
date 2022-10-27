@@ -1,0 +1,11 @@
+<turbo-stream action="replace" target="store_list">
+  <template>
+    <%= render 'store_list', stores: @stores %>
+  </template>
+</turbo-stream>
+
+<turbo-stream action="replace" target="store_display">
+  <template>
+    <%= render 'store', store: @store %>
+  </template>
+</turbo-stream>

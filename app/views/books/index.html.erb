@@ -1,0 +1,18 @@
+<turbo-frame id="store_display">
+
+  <div class="mb-4 flex items-center justify-between">
+    <h3>All Books</h3>
+    <a href="/books/new" data-turbo-frame="store_display">
+      <button primary class="flex items-center">Create Book</button>
+    </a>
+  </div>
+
+  <div class="mb-2 flex items-center bg-indigo-800 pl-2 py-1">
+    <h4 class="font-bold text-neutral-100">Books</h4>
+  </div>
+
+  <div class="space-y-2">
+    <%= render partial: 'book_list_item', collection: @books, as: :book %>
+  </div>
+
+</turbo-frame>

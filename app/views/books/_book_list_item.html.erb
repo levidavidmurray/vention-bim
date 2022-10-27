@@ -1,0 +1,14 @@
+<div class="border-b border-neutral-300 pb-2 mb-2">
+  <turbo-frame id="book_<%= book.id %>">
+
+    <div class="flex">
+      <%= render "shared/book_list_item_info", book: book %>
+
+      <div class="flex flex-grow items-end justify-end space-x-2">
+        <%= button_to "Edit", "/books/#{book.id}/edit", method: "get", form: { "data-turbo-frame": "store_display" } %>
+        <%= button_to "Delete", "/books/#{book.id}", method: "delete", form: { "data-turbo-frame": "store_display" } %>
+      </div>
+    </div>
+
+  </turbo-frame>
+</div>

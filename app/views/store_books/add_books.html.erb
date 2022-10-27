@@ -1,0 +1,20 @@
+<turbo-frame id="store_display">
+  <div class="mb-4 flex items-center justify-between">
+    <h3><%= @store.name %></h3>
+    <a href="/stores/<%= @store.id %>" data-turbo-frame="store_display">
+      <button primary class="flex items-center">Done</button>
+    </a>
+  </div>
+
+  <div class="mb-2 flex items-center bg-indigo-800 pl-2 py-1">
+    <h4 class="font-bold text-neutral-100">Add Books to <%= @store.name %></h4>
+  </div>
+
+  <div class="space-y-2">
+    <% for book in @books %>
+      <%= render partial: 'add_book_list_item', locals: { book: book, store: @store } %>
+    <% end %>
+    
+    <%#= render partial: 'add_book_list_item', collection: @books, as: :book, store: @store %>
+  </div>
+</turbo-frame>

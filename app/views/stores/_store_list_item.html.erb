@@ -1,0 +1,15 @@
+<turbo-stream action="append" target="store_list_items">
+  <template>
+    <a href="/stores/<%= store.id %>" data-turbo-frame="store_display" class="block border border-neutral-300 bg-neutral-200 px-4 py-2 active:bg-neutral-400">
+      <div class="flex justify-between items-center">
+
+        <h4 class="font-semibold"><%= store.name %></h4>
+
+        <% if store.order_required? %>
+          <iconify-icon icon="bi:exclamation-circle-fill" class="text-yellow-600"></iconify-icon>
+        <% end %>
+
+      </div>
+    </a>
+  </template>
+</turbo-stream>

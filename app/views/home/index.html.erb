@@ -1,0 +1,27 @@
+<%#= turbo_stream_from "stores" %>
+
+<header class="p-4 bg-indigo-900">
+  <h1 class="text-3xl font-bold text-white">Vention BIM</h1>
+</header>
+
+<div class="flex px-4 mt-4">
+
+  <%# Bookstore List %>
+  <div class="w-72 flex-shrink-0 mr-8">
+    <turbo-frame src="/stores" id="store_list"></turbo-frame>
+  </div>
+
+  <%# Selected Bookstore %>
+  <div class="flex-grow mt-2">
+    <div class="w-full flex justify-end mb-2">
+      <a href="/books" data-turbo-frame="store_display">
+        <button primary>View All Books</button>
+      </a>
+    </div>
+    <div class="w-full bg-neutral-200 border-neutral-300 border py-4 px-6">
+      <turbo-frame src="/stores/1" id="store_display"></turbo-frame>
+    </div>
+  </div>
+
+</div>
+

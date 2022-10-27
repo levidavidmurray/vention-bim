@@ -1,0 +1,17 @@
+<turbo-frame id="store_list">
+  <div class="flex items-center justify-between">
+    <h2 class="text-xl font-bold mb-2">Bookstores (<%= stores.count %>)</h2>
+    <a href="/stores/new" data-turbo-frame="store_display">
+      <button primary>
+        <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+        Add Store
+      </button>
+    </a>
+  </div>
+
+  <div id="store_list_items" class="space-y-2">
+    <% for store in stores %>
+      <%= render 'store_list_item', store: store %>
+    <% end %>
+  </div>
+</turbo-frame>

@@ -1,0 +1,13 @@
+<turbo-frame id="book_author" class="flex">
+
+  <% if local_assigns[:author] %>
+    <%= select_tag :author_id, options_from_collection_for_select(Author.all, 'id', 'full_name', author.id), prompt: "Select an author" %>
+  <% else %>
+    <%= select_tag :author_id, options_from_collection_for_select(Author.all, 'id', 'full_name'), prompt: "Select an author" %>
+  <% end %>
+
+  <a href="<%= new_author_path %>" data-turbo-frame="_self" class="ml-2 h-full">
+    <button>New Author</button>
+  </a>
+
+</turbo-frame>

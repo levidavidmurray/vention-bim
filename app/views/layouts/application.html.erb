@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="h-full bg-neutral-100">
   <head>
     <title>VentionBim</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= vite_client_tag %>
+    <%= vite_typescript_tag 'application' %>
+
     <%= javascript_importmap_tags %>
+
   </head>
 
-  <body>
+  <body class="font-sans">
     <%= yield %>
   </body>
 </html>
