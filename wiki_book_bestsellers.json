@@ -1,0 +1,274 @@
+{
+  "1991": [
+    {
+      "title": "The Plains of Passage",
+      "author": {
+        "firstName": "Jean M.",
+        "lastName": "Auel"
+      }
+    },
+    {
+      "title": "The Secret Pilgrim",
+      "author": {
+        "firstName": "John le",
+        "lastName": "Carré"
+      }
+    },
+    {
+      "title": "Cold Fire",
+      "author": {
+        "firstName": "Dean",
+        "lastName": "Koontz"
+      }
+    },
+    {
+      "title": "Heartbeat",
+      "author": {
+        "firstName": "Danielle",
+        "lastName": "Steel"
+      }
+    },
+    {
+      "title": "The Seeress of Kell",
+      "author": {
+        "firstName": "David",
+        "lastName": "Eddings"
+      }
+    },
+    {
+      "title": "Loves Music, Loves to Dance",
+      "author": {
+        "firstName": "Mary Higgins",
+        "lastName": "Clark"
+      }
+    },
+    {
+      "title": "Oh, the Places You'll Go!",
+      "author": {
+        "firstName": "Dr.",
+        "lastName": "Seuss"
+      }
+    },
+    {
+      "title": "Heir to the Empire",
+      "author": {
+        "firstName": "Timothy",
+        "lastName": "Zahn"
+      }
+    },
+    {
+      "title": "The Kitchen God's Wife",
+      "author": {
+        "firstName": "Amy",
+        "lastName": "Tan"
+      }
+    },
+    {
+      "title": "The Sum of All Fears",
+      "author": {
+        "firstName": "Tom",
+        "lastName": "Clancy"
+      }
+    },
+    {
+      "title": "Scarlett",
+      "author": {
+        "firstName": "Alexandra",
+        "lastName": "Ripley"
+      }
+    }
+  ],
+  "1994": [
+    {
+      "title": "Slow Waltz in Cedar Bend",
+      "author": {
+        "firstName": "Robert James",
+        "lastName": "Waller"
+      }
+    },
+    {
+      "title": "Disclosure",
+      "author": {
+        "firstName": "Michael",
+        "lastName": "Crichton"
+      }
+    },
+    {
+      "title": "Accident",
+      "author": {
+        "firstName": "Danielle",
+        "lastName": "Steel"
+      }
+    },
+    {
+      "title": "The Celestine Prophecy",
+      "author": {
+        "firstName": "James",
+        "lastName": "Redfield"
+      }
+    },
+    {
+      "title": "Remember Me",
+      "author": {
+        "firstName": "Mary Higgins",
+        "lastName": "Clark"
+      }
+    },
+    {
+      "title": "The Celestine Prophecy",
+      "author": {
+        "firstName": "James",
+        "lastName": "Redfield"
+      }
+    },
+    {
+      "title": "The Chamber",
+      "author": {
+        "firstName": "John",
+        "lastName": "Grisham"
+      }
+    },
+    {
+      "title": "The Gift",
+      "author": {
+        "firstName": "Danielle",
+        "lastName": "Steel"
+      }
+    },
+    {
+      "title": "Debt of Honor",
+      "author": {
+        "firstName": "Tom",
+        "lastName": "Clancy"
+      }
+    },
+    {
+      "title": "Taltos",
+      "author": {
+        "firstName": "Anne",
+        "lastName": "Rice"
+      }
+    },
+    {
+      "title": "Insomnia",
+      "author": {
+        "firstName": "Stephen",
+        "lastName": "King"
+      }
+    },
+    {
+      "title": "The Celestine Prophecy",
+      "author": {
+        "firstName": "James",
+        "lastName": "Redfield"
+      }
+    },
+    {
+      "title": "Politically Correct Bedtime Stories",
+      "author": {
+        "firstName": "James Finn",
+        "lastName": "Garner"
+      }
+    }
+  ],
+  "1997": [
+    {
+      "title": "Airframe",
+      "author": {
+        "firstName": "Michael",
+        "lastName": "Crichton"
+      }
+    },
+    {
+      "title": "Hornet's Nest",
+      "author": {
+        "firstName": "Patricia",
+        "lastName": "Cornwell"
+      }
+    },
+    {
+      "title": "Sole Survivor",
+      "author": {
+        "firstName": "Dean",
+        "lastName": "Koontz"
+      }
+    },
+    {
+      "title": "The Partner",
+      "author": {
+        "firstName": "John",
+        "lastName": "Grisham"
+      }
+    },
+    {
+      "title": "Pretend You Don't See Her",
+      "author": {
+        "firstName": "Mary Higgins",
+        "lastName": "Clark"
+      }
+    },
+    {
+      "title": "The Partner",
+      "author": {
+        "firstName": "John",
+        "lastName": "Grisham"
+      }
+    },
+    {
+      "title": "Plum Island",
+      "author": {
+        "firstName": "Nelson",
+        "lastName": "DeMille"
+      }
+    },
+    {
+      "title": "Special Delivery",
+      "author": {
+        "firstName": "Danielle",
+        "lastName": "Steel"
+      }
+    },
+    {
+      "title": "Unnatural Exposure",
+      "author": {
+        "firstName": "Patricia",
+        "lastName": "Cornwell"
+      }
+    },
+    {
+      "title": "Cold Mountain",
+      "author": {
+        "firstName": "Charles",
+        "lastName": "Frazier"
+      }
+    },
+    {
+      "title": "Flood Tide",
+      "author": {
+        "firstName": "Clive",
+        "lastName": "Cussler"
+      }
+    },
+    {
+      "title": "Cold Mountain",
+      "author": {
+        "firstName": "Charles",
+        "lastName": "Frazier"
+      }
+    },
+    {
+      "title": "The Ghost",
+      "author": {
+        "firstName": "Danielle",
+        "lastName": "Steel"
+      }
+    },
+    {
+      "title": "Cold Mountain",
+      "author": {
+        "firstName": "Charles",
+        "lastName": "Frazier"
+      }
+    }
+  ]
+}
