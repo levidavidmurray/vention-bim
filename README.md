@@ -29,7 +29,11 @@ bundle exec rake assets:precompile
 # start server
 bundle exec rails s -e production
 ```
+### Demo
+<a href="https://vention.levimurray.dev" target="_blank">https://vention.levimurray.dev</a>
 
-<p align="center">
-  <img src="vention-bim-screen.png">
-</p>
+<a href="https://vention.levimurray.dev" target="_blank">
+  <p align="center">
+    <img src="vention-bim-screen.png">
+  </p>
+</a>
