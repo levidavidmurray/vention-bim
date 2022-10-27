@@ -1,24 +1,32 @@
-# README
+# Vention BIM (Book Inventory Management)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">
+  <img src="vention-bim-screen.png">
+</p>
 
-Things you may want to cover:
+Book Inventory Management system for Vention take home project. Developed using Ruby on Rails 7, Hotwire, Vite, and WindiCSS.
 
-* Ruby version
+### Development Setup
+```bash
+# checkout repository
+git clone https://github.com/levidavidmurray/vention-bim.git
+cd ./vention-bim
 
-* System dependencies
+# install dependencies
+bundle && yarn install
 
-* Configuration
+# seed database
+bundle exec rake db:setup db:migrate db:seed
 
-* Database creation
+# start server
+bundle exec rails s
+```
 
-* Database initialization
+### Production Build
+```bash
+# build assets
+bundle exec rake assets:precompile
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# start server
+bundle exec rails s -e production
+```
